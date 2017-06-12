@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:gravity="bottom"
+    android:layout_margin="16dp"
+    android:background="#cccccc"
+    tools:context=".fragments.ChatFragment">
+
+
+    <ScrollView
+        android:id="@+id/mScrollContainer"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:scrollbars="vertical">
+
+        <TextView
+            android:id="@+id/tvMessage"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:padding="16dp"
+            android:layout_margin="16dp"
+            android:textColor="@android:color/black"
+            android:background="@drawable/res_tv_message"
+            />
+
+
+    </ScrollView>
+
+
+    <FrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="16dp">
+
+        <EditText
+            android:id="@+id/edtMessage"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="@string/lbl_hint_message"
+            android:layout_marginTop="16dp"
+            android:background="@drawable/res_edt_message"
+            android:padding="16dp"/>
+
+        <ImageButton
+            android:id="@+id/btnSend"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="right|center_vertical"
+            android:background="@drawable/ic_send_black_24dp"
+            android:paddingRight="16dp"
+            android:layout_marginTop="10dp"
+            android:layout_marginRight="10dp"
+            />
+
+    </FrameLayout>
+
+
+
+
+</LinearLayout>
